@@ -1,7 +1,8 @@
 <?php
 namespace Mexbs\ProductAttributesMassAction\Controller\Adminhtml\Product\Attribute;
 
-class Delete extends \Magento\Backend\App\Action{
+class Delete extends \Magento\Backend\App\Action
+{
     public function execute()
     {
         $attributeCodesToDelete = $this->getRequest()->getParam('attribute_codes');
