@@ -32,7 +32,8 @@ class Delete extends \Magento\Backend\App\Action
                 "Failed to delete the following attributes: %s. Last error message: %s. Succeeded to delete the following attributes: %s.",
                 implode(",",$errorDeletedCodes),
                 $lastErrorMessage,
-                implode(",",$successfullyDeletedCodes)
+                implode(",",$successfullyDeletedCodes),
+                'redundand parameter'
             );
             $this->messageManager->addErrorMessage($errorMessage);
         }else{
