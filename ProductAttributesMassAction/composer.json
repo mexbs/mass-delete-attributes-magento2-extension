@@ -1,0 +1,16 @@
+{
+  "name": "mexbs/mass-delete-attributes-magento2-extension",
+  "description": "A Magento 2 module that helps to sync the Magento products with the Facebook shop tab",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "proprietary"
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Mexbs\\Fbshop\\": ""
+    }
+  }
+}
+
