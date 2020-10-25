@@ -3,6 +3,9 @@ namespace Mexbs\ProductAttributesMassAction\Test\Integration\Controller;
 
 class ProductAttributesGridTest extends \Magento\TestFramework\TestCase\AbstractBackendController
 {
+    public static function loadFixture()
+    {
+    }
     /**
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
