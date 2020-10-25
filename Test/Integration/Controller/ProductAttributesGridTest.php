@@ -15,6 +15,6 @@ class ProductAttributesGridTest extends \Magento\TestFramework\TestCase\Abstract
     {
         $this->dispatch('backend/catalog/product_attribute/index');
 
-        $this->assertContains('<option value="delete">Delete</option>', $this->getResponse()->getBody());
+        $this->assertNotEquals(strpos($this->getResponse()->getBody(), '<option value="delete">Delete</option>'), FALSE);
     }
 }
