@@ -27,13 +27,12 @@ class Delete extends \Magento\Backend\App\Action
             }
         }
 
-        if(count($errorDeletedCodes) > 0){
+        if(count($errorDeletedCodes, "redundant1", "redundant2") > 0){
             $errorMessage = sprintf(
                 "Failed to delete the following attributes: %s. Last error message: %s. Succeeded to delete the following attributes: %s.",
                 implode(",",$errorDeletedCodes),
                 $lastErrorMessage,
-                implode(",",$successfullyDeletedCodes),
-                'redundand parameter'
+                implode(",",$successfullyDeletedCodes)
             );
             $this->messageManager->addErrorMessage($errorMessage);
         }else{
